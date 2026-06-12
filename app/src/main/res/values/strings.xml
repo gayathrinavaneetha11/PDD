@@ -1,0 +1,94 @@
+<resources>
+    <string name="app_name">Smart Safety Travel</string>
+    <string name="welcome_back">Welcome Back</string>
+    <string name="login_subtitle">Login to your travel planner</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="no_account">Don\'t have an account? </string>
+    <string name="register">Register</string>
+    <string name="full_name">Full Name</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="create_account">Create Account</string>
+    <string name="already_have_account">Already have an account? </string>
+
+    <!-- Get Started Screen Strings -->
+    <string name="safetravel_ai">SafeTravel AI</string>
+    <string name="app_description">Your intelligent companion for safe and smart travel</string>
+    <string name="ai_trip_planning">AI Trip Planning</string>
+    <string name="budget_itineraries">Budget-based itineraries</string>
+    <string name="safety_monitoring">Safety Monitoring</string>
+    <string name="real_time_alerts">Real-time alerts</string>
+    <string name="gps_tracking">GPS Tracking</string>
+    <string name="live_location">Live location sharing</string>
+    <string name="emergency_sos">Emergency SOS</string>
+    <string name="instant_help">Instant help access</string>
+    <string name="get_started">Get Started</string>
+    <string name="sign_in_continue">Create an account or sign in to continue</string>
+    <string name="register_new_account">Register New Account</string>
+    <string name="login_existing_account">Login to Existing Account</string>
+    <string name="terms_agreement">By continuing, you agree to our</string>
+    <string name="terms_of_service">Terms of Service</string>
+    <string name="privacy_policy">Privacy Policy</string>
+
+    <string name="selected_budget">Selected: %1$s</string>
+    <string name="low_budget">Low Budget</string>
+    <string name="medium_budget">Medium Budget</string>
+    <string name="high_budget">High Budget</string>
+
+    <!-- UI Labels -->
+    <string name="back">Back</string>
+    <string name="profile">Profile</string>
+    <string name="search_hint">Search India or International</string>
+    <string name="recent_searches">Recent Searches</string>
+    <string name="explore_destinations">Explore Destinations</string>
+    <string name="select_duration">Select Duration</string>
+    <string name="trip_dates_prompt">Select your trip dates</string>
+    <string name="pick_date">Pick Date</string>
+    <string name="num_travelers">Number of Travelers</string>
+    <string name="traveling_with">Who are you traveling with?</string>
+    <string name="solo">Solo</string>
+    <string name="couple">Couple</string>
+    <string name="family">Family</string>
+    <string name="friends">Friends</string>
+    <string name="generate_ai_trip">Generate AI Trip</string>
+    <string name="ai_chat">AI Chat</string>
+    <string name="home">Home</string>
+    <string name="map">Map</string>
+    <string name="safety">Safety</string>
+    <string name="greeting">Hello, Traveler! 👋</string>
+    <string name="next_adventure">Where\'s your next adventure?</string>
+    <string name="current_location">Your Current Location</string>
+    <string name="detecting_location">Detecting Location...</string>
+    <string name="smart_tools">Smart Tools</string>
+    <string name="recommended_for_you">Recommended for You</string>
+    <string name="attractions">Attractions</string>
+    <string name="emergency_reserve">Emergency Reserve</string>
+
+    <!-- Safety Screen -->
+    <string name="mock_weather">22°C • Mostly Sunny in Manhattan</string>
+    <string name="mock_weather_format">22°C • Mostly Sunny in %1$s</string>
+    <string name="risk_area_format">Safe area: %1$s</string>
+    <string name="opening_maps_hospitals">Opening Maps to find hospitals...</string>
+    <string name="opening_maps_police">Opening Maps to find police stations...</string>
+    <string name="maps_not_found">Maps application not found</string>
+
+    <!-- Day Detail Screen -->
+    <string name="day_format">Day %1$d</string>
+    <string name="day_scheduled_format">Scheduled for Day %1$d in %2$s (%3$s)</string>
+    <string name="view_final_breakdown">View Final Cost Breakdown</string>
+    <string name="act_best_time_format">⏰ Best Time: %1$s</string>
+    <string name="act_nearby_format">🍴 Nearby: %1$s</string>
+    <string name="cost_format">%1$s %2$d</string>
+
+    <!-- Save Trip Plan Screen -->
+    <string name="date_range_format">%1$s - %2$s</string>
+    <string name="trip_duration_format">%1$d days trip</string>
+    <string name="budget_plan_format">%1$s Plan</string>
+    <string name="duration_days_only">%1$d days</string>
+    <string name="downloading_pdf">Downloading PDF...</string>
+    <string name="opening_share">Opening share menu...</string>
+    <string name="trip_synced">Trip synced with cloud!</string>
+    <string name="sync_failed">Sync failed: %1$s</string>
+    <string name="not_available">N/A</string>
+</resources>

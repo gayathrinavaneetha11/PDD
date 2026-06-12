@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1028116513156",
+    "project_id": "travel-2c119",
+    "storage_bucket": "travel-2c119.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1028116513156:android:d7a79603a63ff321979dd1",
+        "android_client_info": {
+          "package_name": "com.example.smartsaftytravel"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCAPgvpEqgBhjc_EXXmjJFX08OgTnrNomE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

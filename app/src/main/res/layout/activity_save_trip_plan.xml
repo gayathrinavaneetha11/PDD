@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg"
+    tools:context=".SaveTripPlanActivity">
+
+    <!-- Header -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="12dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/btnBack"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_plane"
+            android:rotation="-90"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@color/text_dark" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Save Trip Plan"
+            android:textColor="@color/text_dark"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/btnBack"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:padding="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnBackToHome"
+        app:layout_constraintTop_toBottomOf="@id/header">
+
+        <!-- Success Message Card -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/itinerary_header_bg"
+            android:padding="32dp">
+
+            <ImageView
+                android:id="@+id/successIcon"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:background="@drawable/feature_card_bg"
+                android:padding="16dp"
+                android:src="@drawable/ic_safety_check"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:tint="@color/white" />
+
+            <TextView
+                android:id="@+id/successTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Trip Plan Saved!"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/successIcon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Your itinerary is ready"
+                android:textColor="#F0F0F0"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/successTitle" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <!-- Trip Summary -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="2dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Trip Summary"
+                    android:textColor="@color/text_dark"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+                    <ImageView android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/ic_location" app:tint="@color/primary_blue" />
+                    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="16dp" android:orientation="vertical">
+                        <TextView android:id="@+id/summaryDestination" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Destination Name" android:textColor="@color/text_dark" android:textStyle="bold" />
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Destination" android:textColor="@color/gray_text" android:textSize="12sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+                    <ImageView android:layout_width="24dp" android:layout_height="24dp" android:src="@android:drawable/ic_menu_my_calendar" app:tint="@color/stats_gradient_end" />
+                    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="16dp" android:orientation="vertical">
+                        <TextView android:id="@+id/summaryDates" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Date Range" android:textColor="@color/text_dark" android:textStyle="bold" />
+                        <TextView android:id="@+id/summaryDuration" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0 days trip" android:textColor="@color/gray_text" android:textSize="12sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+                    <ImageView android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/ic_sparkle" app:tint="@color/safety_green" />
+                    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="16dp" android:orientation="vertical">
+                        <TextView android:id="@+id/summaryBudget" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Budget Value" android:textColor="@color/text_dark" android:textStyle="bold" />
+                        <TextView android:id="@+id/summaryBudgetType" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Budget Level" android:textColor="@color/gray_text" android:textSize="12sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Actions -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnDownload"
+                style="@style/Widget.Material3.Button.OutlinedButton"
+                android:layout_width="0dp"
+                android:layout_height="64dp"
+                android:layout_marginEnd="8dp"
+                android:layout_weight="1"
+                android:text="Download PDF"
+                android:textAllCaps="false"
+                app:cornerRadius="12dp"
+                app:startIconDrawable="@android:drawable/ic_menu_save" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnShare"
+                style="@style/Widget.Material3.Button.OutlinedButton"
+                android:layout_width="0dp"
+                android:layout_height="64dp"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:text="Share Plan"
+                android:textAllCaps="false"
+                app:cornerRadius="12dp"
+                app:startIconDrawable="@android:drawable/ic_menu_share"
+                app:strokeColor="@color/safety_green"
+                android:textColor="@color/safety_green"
+                app:startIconTint="@color/safety_green" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnBackToHome"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_margin="20dp"
+        android:backgroundTint="@color/primary_blue"
+        android:text="Back to Home"
+        android:textAllCaps="false"
+        app:cornerRadius="12dp"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

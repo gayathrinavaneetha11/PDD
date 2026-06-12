@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingVertical="12dp">
+
+    <TextView
+        android:id="@+id/costLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Category"
+        android:textColor="@color/gray_text"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/costValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:text="₹ 0"
+        android:textColor="@color/text_dark"
+        android:textStyle="bold"
+        android:textSize="14sp" />
+
+    <com.google.android.material.progressindicator.LinearProgressIndicator
+        android:id="@+id/costProgress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/costLabel"
+        android:layout_marginTop="8dp"
+        android:progress="0"
+        app:trackColor="@color/light_gray"
+        app:trackThickness="4dp"
+        app:indicatorColor="@color/primary_blue" />
+
+</RelativeLayout>

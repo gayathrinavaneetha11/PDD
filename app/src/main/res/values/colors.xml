@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary Colors -->
+    <color name="primary_blue">#0052FF</color>
+    <color name="primary_blue_light">#E3F2FD</color>
+
+    <!-- Status Colors -->
+    <color name="safety_green">#00C853</color>
+    <color name="safety_green_light">#E8F5E9</color>
+    <color name="alert_red">#D32F2F</color>
+    <color name="alert_red_light">#FFEBEE</color>
+    <color name="sos_red">#E50000</color>
+
+    <!-- Background and Text -->
+    <color name="app_bg">#F5F9FF</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="black">#FF000000</color>
+    <color name="text_dark">#0A1931</color>
+    <color name="gray_text">#757575</color>
+    <color name="light_gray">#E0E0E0</color>
+    <color name="input_bg">#F8FAFC</color>
+
+    <!-- Gradients -->
+    <color name="stats_gradient_start">#4A90E2</color>
+    <color name="stats_gradient_end">#9B51E0</color>
+    <color name="gradient_start">#3D5AFE</color>
+    <color name="gradient_end">#AA00FF</color>
+
+    <!-- Step Gradients -->
+    <color name="dest_gradient_start">#4facfe</color>
+    <color name="dest_gradient_end">#00f2fe</color>
+    <color name="budget_gradient_start">#0ba360</color>
+    <color name="budget_gradient_end">#3cba92</color>
+    <color name="date_gradient_start">#f093fb</color>
+    <color name="date_gradient_end">#f5576c</color>
+    <color name="itinerary_gradient_start">#00b09b</color>
+    <color name="itinerary_gradient_end">#96c93d</color>
+    <color name="report_gradient_start">#FF512F</color>
+    <color name="report_gradient_end">#DD2476</color>
+    <color name="upload_gradient_start">#8E2DE2</color>
+    <color name="upload_gradient_end">#4A00E0</color>
+</resources>
