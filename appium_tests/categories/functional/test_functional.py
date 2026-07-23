@@ -345,5 +345,182 @@ TEST_CASES = [
             ("tap", "langSpanish"),
             ("find_text", "Idioma cambiado")
         ]
+    },
+    {
+        "id": "TC_251", "category": "Functional Testing",
+        "name": "User Profile - Change Password",
+        "description": "Verify user can change their password successfully.",
+        "steps": [
+            ("tap", "navProfile"),
+            ("tap", "btnChangePassword"),
+            ("type", "currentPassword", "SecurePass123"),
+            ("type", "newPassword", "NewSecurePass456"),
+            ("type", "confirmNewPassword", "NewSecurePass456"),
+            ("tap", "btnUpdatePassword"),
+            ("find_text", "Password updated successfully")
+        ]
+    },
+    {
+        "id": "TC_252", "category": "Functional Testing",
+        "name": "Trip Planning - Filter by Budget",
+        "description": "Verify user can filter trip results by budget range.",
+        "steps": [
+            ("tap", "planTripCard"),
+            ("type", "searchEditText", "Barcelona"),
+            ("tap", "budgetFilter"),
+            ("tap", "budgetLow"),
+            ("tap", "btnApplyFilter"),
+            ("find", "filteredResults")
+        ]
+    },
+    {
+        "id": "TC_253", "category": "Functional Testing",
+        "name": "Trip Planning - Filter by Duration",
+        "description": "Verify user can filter trips by duration.",
+        "steps": [
+            ("tap", "planTripCard"),
+            ("type", "searchEditText", "Amsterdam"),
+            ("tap", "durationFilter"),
+            ("tap", "durationWeek"),
+            ("tap", "btnApplyFilter"),
+            ("find", "filteredResults")
+        ]
+    },
+    {
+        "id": "TC_254", "category": "Functional Testing",
+        "name": "Chat - Send Image Message",
+        "description": "Verify user can send images in chat.",
+        "steps": [
+            ("tap", "navChat"),
+            ("tap", "btnAttachImage"),
+            ("tap", "btnSelectFromGallery"),
+            ("tap", "btnSendMessage"),
+            ("find", "messageRecyclerView")
+        ]
+    },
+    {
+        "id": "TC_255", "category": "Functional Testing",
+        "name": "Settings - Enable Dark Mode",
+        "description": "Verify user can enable dark mode in settings.",
+        "steps": [
+            ("tap", "navProfile"),
+            ("tap", "btnSettings"),
+            ("tap", "toggleDarkMode"),
+            ("find", "darkModeActive")
+        ]
+    },
+    {
+        "id": "TC_256", "category": "Functional Testing",
+        "name": "Trip Planning - Save Multiple Destinations",
+        "description": "Verify user can save multiple destinations to wishlist.",
+        "steps": [
+            ("tap", "planTripCard"),
+            ("type", "searchEditText", "Vienna"),
+            ("tap", "Vienna"),
+            ("tap", "btnAddToWishlist"),
+            ("find_text", "Added to wishlist")
+        ]
+    },
+    {
+        "id": "TC_257", "category": "Functional Testing",
+        "name": "Safety - View Nearby Police Stations",
+        "description": "Verify user can view nearby police stations on map.",
+        "steps": [
+            ("tap", "navSafety"),
+            ("tap", "btnNearbyPolice"),
+            ("find", "mapMarkers")
+        ]
+    },
+    {
+        "id": "TC_258", "category": "Functional Testing",
+        "name": "Safety - View Nearby Embassies",
+        "description": "Verify user can view nearby embassies on map.",
+        "steps": [
+            ("tap", "navSafety"),
+            ("tap", "btnNearbyEmbassies"),
+            ("find", "mapMarkers")
+        ]
+    },
+    {
+        "id": "TC_259", "category": "Functional Testing",
+        "name": "Profile - Delete Account",
+        "description": "Verify user can delete their account.",
+        "steps": [
+            ("tap", "navProfile"),
+            ("tap", "btnDeleteAccount"),
+            ("type", "confirmPassword", "SecurePass123"),
+            ("tap", "btnConfirmDelete"),
+            ("find_text", "Account deleted successfully")
+        ]
+    },
+    {
+        "id": "TC_260", "category": "Functional Testing",
+        "name": "Trip Planning - Share Trip",
+        "description": "Verify user can share trip details with others.",
+        "steps": [
+            ("tap", "navProfile"),
+            ("tap", "btnSavedTrips"),
+            ("tap", "btnShareTrip"),
+            ("find", "shareOptions")
+        ]
+    },
+    {
+        "id": "TC_261", "category": "Functional Testing",
+        "name": "Chat - Clear Chat History",
+        "description": "Verify user can clear chat history.",
+        "steps": [
+            ("tap", "navChat"),
+            ("tap", "btnClearHistory"),
+            ("tap", "btnConfirmClear"),
+            ("find_text", "Chat history cleared")
+        ]
+    },
+    {
+        "id": "TC_262", "category": "Functional Testing",
+        "name": "Settings - Manage Notification Preferences",
+        "description": "Verify user can manage notification preferences.",
+        "steps": [
+            ("tap", "navProfile"),
+            ("tap", "btnSettings"),
+            ("tap", "notificationPreferences"),
+            ("tap", "toggleTripAlerts"),
+            ("tap", "toggleSafetyAlerts"),
+            ("tap", "btnSavePreferences"),
+            ("find_text", "Preferences saved")
+        ]
+    },
+    {
+        "id": "TC_263", "category": "Functional Testing",
+        "name": "Safety - View Crime Statistics",
+        "description": "Verify user can view crime statistics for area.",
+        "steps": [
+            ("tap", "navSafety"),
+            ("tap", "btnCrimeStats"),
+            ("find", "statsChart")
+        ]
+    },
+    {
+        "id": "TC_264", "category": "Functional Testing",
+        "name": "Trip Planning - Book Flight",
+        "description": "Verify user can book flights through app.",
+        "steps": [
+            ("tap", "planTripCard"),
+            ("type", "searchEditText", "Dublin"),
+            ("tap", "Dublin"),
+            ("tap", "cardMedium"),
+            ("tap", "btnContinue"),
+            ("tap", "btnBookFlight"),
+            ("find", "flightOptions")
+        ]
+    },
+    {
+        "id": "TC_265", "category": "Functional Testing",
+        "name": "Profile - View Travel History",
+        "description": "Verify user can view their travel history.",
+        "steps": [
+            ("tap", "navProfile"),
+            ("tap", "btnTravelHistory"),
+            ("find", "historyList")
+        ]
     }
 ]

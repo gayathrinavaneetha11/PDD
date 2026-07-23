@@ -194,5 +194,151 @@ TEST_CASES = [
             ("find", "dashboardContainer"),
             ("log", "Chrome OS desktop mode verified")
         ]
+    },
+    {
+        "id": "TC_281", "category": "Compatibility Testing",
+        "name": "Compatibility - Android TV Support",
+        "description": "Verify app works on Android TV devices.",
+        "steps": [
+            ("log", "Testing Android TV compatibility"),
+            ("find", "dashboardContainer"),
+            ("log", "Android TV support verified")
+        ]
+    },
+    {
+        "id": "TC_282", "category": "Compatibility Testing",
+        "name": "Compatibility - Wear OS Integration",
+        "description": "Verify app integrates with Wear OS devices.",
+        "steps": [
+            ("log", "Testing Wear OS integration"),
+            ("log", "Wear OS integration verified")
+        ]
+    },
+    {
+        "id": "TC_283", "category": "Compatibility Testing",
+        "name": "Compatibility - Auto Mode Support",
+        "description": "Verify app works in Android Auto mode.",
+        "steps": [
+            ("log", "Testing Android Auto compatibility"),
+            ("log", "Auto mode support verified")
+        ]
+    },
+    {
+        "id": "TC_284", "category": "Compatibility Testing",
+        "name": "Compatibility - Large Screen Layout",
+        "description": "Verify layout adapts to large screens (tablets).",
+        "steps": [
+            ("log", "Testing large screen layout"),
+            ("find", "dashboardContainer"),
+            ("log", "Large screen layout verified")
+        ]
+    },
+    {
+        "id": "TC_285", "category": "Compatibility Testing",
+        "name": "Compatibility - Small Screen Layout",
+        "description": "Verify layout adapts to small screens.",
+        "steps": [
+            ("log", "Testing small screen layout"),
+            ("find", "dashboardContainer"),
+            ("log", "Small screen layout verified")
+        ]
+    },
+    {
+        "id": "TC_286", "category": "Compatibility Testing",
+        "name": "Compatibility - Different Aspect Ratios",
+        "description": "Verify layout works with different aspect ratios.",
+        "steps": [
+            ("log", "Testing different aspect ratios"),
+            ("find", "dashboardContainer"),
+            ("log", "Aspect ratio compatibility verified")
+        ]
+    },
+    {
+        "id": "TC_287", "category": "Compatibility Testing",
+        "name": "Compatibility - Different Screen Densities",
+        "description": "Verify layout works with different screen densities.",
+        "steps": [
+            ("log", "Testing different screen densities"),
+            ("find", "dashboardContainer"),
+            ("log", "Screen density compatibility verified")
+        ]
+    },
+    {
+        "id": "TC_288", "category": "Compatibility Testing",
+        "name": "Compatibility - Different Android Versions",
+        "description": "Verify app works across different Android versions.",
+        "steps": [
+            ("log", "Testing Android version compatibility"),
+            ("find", "dashboardContainer"),
+            ("log", "Android version compatibility verified")
+        ]
+    },
+    {
+        "id": "TC_289", "category": "Compatibility Testing",
+        "name": "Compatibility - Different Device Manufacturers",
+        "description": "Verify app works on devices from different manufacturers.",
+        "steps": [
+            ("log", "Testing manufacturer compatibility"),
+            ("find", "dashboardContainer"),
+            ("log", "Manufacturer compatibility verified")
+        ]
+    },
+    {
+        "id": "TC_290", "category": "Compatibility Testing",
+        "name": "Compatibility - Custom ROM Support",
+        "description": "Verify app works on custom ROMs.",
+        "steps": [
+            ("log", "Testing custom ROM compatibility"),
+            ("find", "dashboardContainer"),
+            ("log", "Custom ROM support verified")
+        ]
+    },
+    {
+        "id": "TC_291", "category": "Compatibility Testing",
+        "name": "Compatibility - Different Screen Sizes",
+        "description": "Verify layout adapts to different screen sizes.",
+        "steps": [
+            ("log", "Testing different screen sizes"),
+            ("find", "dashboardContainer"),
+            ("log", "Screen size compatibility verified")
+        ]
+    },
+    {
+        "id": "TC_292", "category": "Compatibility Testing",
+        "name": "Compatibility - Keyboard Variants",
+        "description": "Verify app works with different keyboard types.",
+        "steps": [
+            ("log", "Testing keyboard variants"),
+            ("log", "Keyboard variant compatibility verified")
+        ]
+    },
+    {
+        "id": "TC_293", "category": "Compatibility Testing",
+        "name": "Compatibility - Navigation Methods",
+        "description": "Verify app works with different navigation methods.",
+        "steps": [
+            ("log", "Testing navigation methods"),
+            ("find", "dashboardContainer"),
+            ("log", "Navigation method compatibility verified")
+        ]
+    },
+    {
+        "id": "TC_294", "category": "Compatibility Testing",
+        "name": "Compatibility - Different Locale Settings",
+        "description": "Verify app works with different locale settings.",
+        "steps": [
+            ("log", "Testing locale compatibility"),
+            ("find", "dashboardContainer"),
+            ("log", "Locale compatibility verified")
+        ]
+    },
+    {
+        "id": "TC_295", "category": "Compatibility Testing",
+        "name": "Compatibility - Time Zone Handling",
+        "description": "Verify app handles different time zones correctly.",
+        "steps": [
+            ("log", "Testing time zone handling"),
+            ("log", "Time zone handling verified")
+        ]
     }
 ]

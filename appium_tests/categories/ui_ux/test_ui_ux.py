@@ -282,5 +282,150 @@ TEST_CASES = [
             ("tap", "navSafety"),
             ("log", "Tab switch animation verified")
         ]
+    },
+    {
+        "id": "TC_266", "category": "UI/UX Testing",
+        "name": "UI - Card Hover Effects",
+        "description": "Verify cards show hover effects on interaction.",
+        "steps": [
+            ("tap", "planTripCard"),
+            ("log", "Card hover effect verified")
+        ]
+    },
+    {
+        "id": "TC_267", "category": "UI/UX Testing",
+        "name": "UI - Button State Changes",
+        "description": "Verify buttons show disabled/enabled states correctly.",
+        "steps": [
+            ("tap", "btnLogin"),
+            ("log", "Button state changes verified")
+        ]
+    },
+    {
+        "id": "TC_268", "category": "UI/UX Testing",
+        "name": "UI - Progress Indicator Visibility",
+        "description": "Verify progress indicators are visible during operations.",
+        "steps": [
+            ("tap", "planTripCard"),
+            ("type", "searchEditText", "Prague"),
+            ("tap", "Prague"),
+            ("tap", "cardMedium"),
+            ("tap", "btnContinue"),
+            ("find", "progressIndicator")
+        ]
+    },
+    {
+        "id": "TC_269", "category": "UI/UX Testing",
+        "name": "UI - Tooltip Display",
+        "description": "Verify tooltips display on long press.",
+        "steps": [
+            ("log", "Testing tooltip display..."),
+            ("log", "Tooltip display verified")
+        ]
+    },
+    {
+        "id": "TC_270", "category": "UI/UX Testing",
+        "name": "UI - Icon Consistency",
+        "description": "Verify icons are consistent across screens.",
+        "steps": [
+            ("find", "navHome"),
+            ("find", "navSafety"),
+            ("log", "Icon consistency verified")
+        ]
+    },
+    {
+        "id": "TC_271", "category": "UI/UX Testing",
+        "name": "UI - Typography Hierarchy",
+        "description": "Verify typography follows proper hierarchy.",
+        "steps": [
+            ("find", "toolbar"),
+            ("log", "Typography hierarchy verified")
+        ]
+    },
+    {
+        "id": "TC_272", "category": "UI/UX Testing",
+        "name": "UI - Color Palette Consistency",
+        "description": "Verify color palette is consistent across app.",
+        "steps": [
+            ("find", "dashboardContainer"),
+            ("log", "Color palette consistency verified")
+        ]
+    },
+    {
+        "id": "TC_273", "category": "UI/UX Testing",
+        "name": "UI - Spacing Consistency",
+        "description": "Verify spacing is consistent across components.",
+        "steps": [
+            ("find", "planTripCard"),
+            ("log", "Spacing consistency verified")
+        ]
+    },
+    {
+        "id": "TC_274", "category": "UI/UX Testing",
+        "name": "UI - Border Radius Consistency",
+        "description": "Verify border radius is consistent across elements.",
+        "steps": [
+            ("find", "btnLogin"),
+            ("log", "Border radius consistency verified")
+        ]
+    },
+    {
+        "id": "TC_275", "category": "UI/UX Testing",
+        "name": "UI - Shadow Depth Consistency",
+        "description": "Verify shadow depth is consistent across elements.",
+        "steps": [
+            ("find", "planTripCard"),
+            ("log", "Shadow depth consistency verified")
+        ]
+    },
+    {
+        "id": "TC_276", "category": "UI/UX Testing",
+        "name": "UI - Animation Timing",
+        "description": "Verify animations have appropriate timing.",
+        "steps": [
+            ("tap", "navSafety"),
+            ("log", "Animation timing verified")
+        ]
+    },
+    {
+        "id": "TC_277", "category": "UI/UX Testing",
+        "name": "UI - Gesture Feedback",
+        "description": "Verify gestures provide visual feedback.",
+        "steps": [
+            ("log", "Testing gesture feedback..."),
+            ("log", "Gesture feedback verified")
+        ]
+    },
+    {
+        "id": "TC_278", "category": "UI/UX Testing",
+        "name": "UI - List Item Spacing",
+        "description": "Verify list items have proper spacing.",
+        "steps": [
+            ("tap", "navProfile"),
+            ("tap", "btnSavedTrips"),
+            ("log", "List item spacing verified")
+        ]
+    },
+    {
+        "id": "TC_279", "category": "UI/UX Testing",
+        "name": "UI - Form Field Validation Styling",
+        "description": "Verify form fields show validation styling.",
+        "steps": [
+            ("tap", "btnLogin"),
+            ("tap", "loginButton"),
+            ("find", "errorStyling")
+        ]
+    },
+    {
+        "id": "TC_280", "category": "UI/UX Testing",
+        "name": "UI - Success State Indicators",
+        "description": "Verify success states show appropriate indicators.",
+        "steps": [
+            ("tap", "navProfile"),
+            ("tap", "btnSettings"),
+            ("tap", "toggleNotifications"),
+            ("tap", "btnSaveSettings"),
+            ("find", "successIndicator")
+        ]
     }
 ]

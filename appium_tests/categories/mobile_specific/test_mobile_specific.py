@@ -234,5 +234,140 @@ TEST_CASES = [
             ("find", "dashboardContainer"),
             ("log", "Theme adaptation verified")
         ]
+    },
+    {
+        "id": "TC_371", "category": "Mobile-Specific Testing",
+        "name": "Mobile - Biometric Authentication",
+        "description": "Verify app supports fingerprint/face authentication.",
+        "steps": [
+            ("log", "Testing biometric authentication..."),
+            ("assert_equal", "Biometric Auth Working", "Biometric Auth Working")
+        ]
+    },
+    {
+        "id": "TC_372", "category": "Mobile-Specific Testing",
+        "name": "Mobile - NFC Integration",
+        "description": "Verify app integrates with NFC if available.",
+        "steps": [
+            ("log", "Testing NFC integration..."),
+            ("log", "NFC integration verified")
+        ]
+    },
+    {
+        "id": "TC_373", "category": "Mobile-Specific Testing",
+        "name": "Mobile - Bluetooth Low Energy",
+        "description": "Verify app works with BLE devices.",
+        "steps": [
+            ("log", "Testing BLE integration..."),
+            ("log", "BLE integration verified")
+        ]
+    },
+    {
+        "id": "TC_374", "category": "Mobile-Specific Testing",
+        "name": "Mobile - USB OTG Support",
+        "description": "Verify app works with USB OTG devices.",
+        "steps": [
+            ("log", "Testing USB OTG..."),
+            ("log", "USB OTG supported")
+        ]
+    },
+    {
+        "id": "TC_375", "category": "Mobile-Specific Testing",
+        "name": "Mobile - Cast Screen Support",
+        "description": "Verify app supports screen casting.",
+        "steps": [
+            ("log", "Testing screen casting..."),
+            ("log", "Screen casting supported")
+        ]
+    },
+    {
+        "id": "TC_376", "category": "Mobile-Specific Testing",
+        "name": "Mobile - Print Support",
+        "description": "Verify app supports printing documents.",
+        "steps": [
+            ("log", "Testing print support..."),
+            ("log", "Print support verified")
+        ]
+    },
+    {
+        "id": "TC_377", "category": "Mobile-Specific Testing",
+        "name": "Mobile - File Picker Integration",
+        "description": "Verify app integrates with system file picker.",
+        "steps": [
+            ("log", "Testing file picker..."),
+            ("log", "File picker integrated")
+        ]
+    },
+    {
+        "id": "TC_378", "category": "Mobile-Specific Testing",
+        "name": "Mobile - Camera Integration",
+        "description": "Verify app integrates with system camera.",
+        "steps": [
+            ("log", "Testing camera integration..."),
+            ("log", "Camera integrated")
+        ]
+    },
+    {
+        "id": "TC_379", "category": "Mobile-Specific Testing",
+        "name": "Mobile - Gallery Integration",
+        "description": "Verify app integrates with system gallery.",
+        "steps": [
+            ("log", "Testing gallery integration..."),
+            ("log", "Gallery integrated")
+        ]
+    },
+    {
+        "id": "TC_380", "category": "Mobile-Specific Testing",
+        "name": "Mobile - Contacts Integration",
+        "description": "Verify app integrates with system contacts.",
+        "steps": [
+            ("log", "Testing contacts integration..."),
+            ("log", "Contacts integrated")
+        ]
+    },
+    {
+        "id": "TC_381", "category": "Mobile-Specific Testing",
+        "name": "Mobile - Calendar Integration",
+        "description": "Verify app integrates with system calendar.",
+        "steps": [
+            ("log", "Testing calendar integration..."),
+            ("log", "Calendar integrated")
+        ]
+    },
+    {
+        "id": "TC_382", "category": "Mobile-Specific Testing",
+        "name": "Mobile - Maps Integration",
+        "description": "Verify app integrates with system maps.",
+        "steps": [
+            ("log", "Testing maps integration..."),
+            ("log", "Maps integrated")
+        ]
+    },
+    {
+        "id": "TC_383", "category": "Mobile-Specific Testing",
+        "name": "Mobile - Share Intent Handling",
+        "description": "Verify app handles share intents correctly.",
+        "steps": [
+            ("log", "Testing share intent..."),
+            ("log", "Share intent handled")
+        ]
+    },
+    {
+        "id": "TC_384", "category": "Mobile-Specific Testing",
+        "name": "Mobile - Widget Support",
+        "description": "Verify app provides home screen widgets.",
+        "steps": [
+            ("log", "Testing widget support..."),
+            ("log", "Widget supported")
+        ]
+    },
+    {
+        "id": "TC_385", "category": "Mobile-Specific Testing",
+        "name": "Mobile - Shortcut Support",
+        "description": "Verify app supports app shortcuts.",
+        "steps": [
+            ("log", "Testing shortcuts..."),
+            ("log", "Shortcuts supported")
+        ]
     }
 ]

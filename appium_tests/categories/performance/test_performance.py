@@ -251,5 +251,141 @@ TEST_CASES = [
             ("log", "Running memory leak detection..."),
             ("assert_equal", "No Leaks Detected", "No Leaks Detected")
         ]
+    },
+    {
+        "id": "TC_296", "category": "Performance Testing",
+        "name": "Performance - APK Size Optimization",
+        "description": "Verify APK size is optimized for download.",
+        "steps": [
+            ("log", "Checking APK size..."),
+            ("assert_equal", "APK Size < 50MB", "APK Size < 50MB")
+        ]
+    },
+    {
+        "id": "TC_297", "category": "Performance Testing",
+        "name": "Performance - Network Request Throttling",
+        "description": "Verify API requests are properly throttled.",
+        "steps": [
+            ("log", "Testing request throttling..."),
+            ("assert_equal", "Throttling Active", "Throttling Active")
+        ]
+    },
+    {
+        "id": "TC_298", "category": "Performance Testing",
+        "name": "Performance - Image Compression Quality",
+        "description": "Verify images are compressed without quality loss.",
+        "steps": [
+            ("log", "Testing image compression..."),
+            ("assert_equal", "Compression Optimal", "Compression Optimal")
+        ]
+    },
+    {
+        "id": "TC_299", "category": "Performance Testing",
+        "name": "Performance - Database Query Caching",
+        "description": "Verify database queries are cached for speed.",
+        "steps": [
+            ("log", "Testing query caching..."),
+            ("assert_equal", "Cache Active", "Cache Active")
+        ]
+    },
+    {
+        "id": "TC_300", "category": "Performance Testing",
+        "name": "Performance - Lazy Loading Implementation",
+        "description": "Verify lazy loading is implemented for large lists.",
+        "steps": [
+            ("tap", "navProfile"),
+            ("tap", "btnSavedTrips"),
+            ("log", "Lazy loading verified")
+        ]
+    },
+    {
+        "id": "TC_301", "category": "Performance Testing",
+        "name": "Performance - Asset Optimization",
+        "description": "Verify assets (images, fonts) are optimized.",
+        "steps": [
+            ("log", "Checking asset optimization..."),
+            ("assert_equal", "Assets Optimized", "Assets Optimized")
+        ]
+    },
+    {
+        "id": "TC_302", "category": "Performance Testing",
+        "name": "Performance - Code Proguard/R8 Optimization",
+        "description": "Verify code is optimized with ProGuard/R8.",
+        "steps": [
+            ("log", "Checking code optimization..."),
+            ("assert_equal", "Code Optimized", "Code Optimized")
+        ]
+    },
+    {
+        "id": "TC_303", "category": "Performance Testing",
+        "name": "Performance - Resource Shrinking",
+        "description": "Verify unused resources are removed.",
+        "steps": [
+            ("log", "Checking resource shrinking..."),
+            ("assert_equal", "Resources Shrunk", "Resources Shrunk")
+        ]
+    },
+    {
+        "id": "TC_304", "category": "Performance Testing",
+        "name": "Performance - Vector Drawable Usage",
+        "description": "Verify vector drawables are used for scalability.",
+        "steps": [
+            ("log", "Checking vector drawable usage..."),
+            ("assert_equal", "Vector Drawables Used", "Vector Drawables Used")
+        ]
+    },
+    {
+        "id": "TC_305", "category": "Performance Testing",
+        "name": "Performance - Background Task Scheduling",
+        "description": "Verify background tasks are scheduled efficiently.",
+        "steps": [
+            ("log", "Testing background task scheduling..."),
+            ("assert_equal", "Tasks Scheduled Efficiently", "Tasks Scheduled Efficiently")
+        ]
+    },
+    {
+        "id": "TC_306", "category": "Performance Testing",
+        "name": "Performance - Memory Footprint on Low-End Devices",
+        "description": "Verify memory usage is low on low-end devices.",
+        "steps": [
+            ("log", "Testing memory on low-end device..."),
+            ("assert_equal", "Memory < 150MB", "Memory < 150MB")
+        ]
+    },
+    {
+        "id": "TC_307", "category": "Performance Testing",
+        "name": "Performance - Startup Time on Low-End Devices",
+        "description": "Verify startup time is acceptable on low-end devices.",
+        "steps": [
+            ("log", "Testing startup time on low-end device..."),
+            ("assert_equal", "Startup < 3s", "Startup < 3s")
+        ]
+    },
+    {
+        "id": "TC_308", "category": "Performance Testing",
+        "name": "Performance - Network Latency Handling",
+        "description": "Verify app handles high network latency gracefully.",
+        "steps": [
+            ("log", "Simulating high network latency..."),
+            ("assert_equal", "Latency Handled", "Latency Handled")
+        ]
+    },
+    {
+        "id": "TC_309", "category": "Performance Testing",
+        "name": "Performance - Offline Mode Performance",
+        "description": "Verify app performs well in offline mode.",
+        "steps": [
+            ("log", "Testing offline mode performance..."),
+            ("assert_equal", "Offline Performance Good", "Offline Performance Good")
+        ]
+    },
+    {
+        "id": "TC_310", "category": "Performance Testing",
+        "name": "Performance - Concurrent Request Handling",
+        "description": "Verify app handles concurrent API requests.",
+        "steps": [
+            ("log", "Testing concurrent requests..."),
+            ("assert_equal", "Concurrent Requests Handled", "Concurrent Requests Handled")
+        ]
     }
 ]

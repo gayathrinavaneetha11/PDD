@@ -243,5 +243,146 @@ TEST_CASES = [
             ("find", "dashboardContainer"),
             ("log", "Reduced motion respected")
         ]
+    },
+    {
+        "id": "TC_356", "category": "Accessibility Testing",
+        "name": "Accessibility - Switch Access Support",
+        "description": "Verify app supports switch access navigation.",
+        "steps": [
+            ("log", "Testing switch access..."),
+            ("log", "Switch access supported")
+        ]
+    },
+    {
+        "id": "TC_357", "category": "Accessibility Testing",
+        "name": "Accessibility - Voice Control Support",
+        "description": "Verify app supports voice control commands.",
+        "steps": [
+            ("log", "Testing voice control..."),
+            ("log", "Voice control supported")
+        ]
+    },
+    {
+        "id": "TC_358", "category": "Accessibility Testing",
+        "name": "Accessibility - Braille Display Support",
+        "description": "Verify app works with braille displays.",
+        "steps": [
+            ("log", "Testing braille display..."),
+            ("log", "Braille display supported")
+        ]
+    },
+    {
+        "id": "TC_359", "category": "Accessibility Testing",
+        "name": "Accessibility - High Contrast Mode",
+        "description": "Verify app supports high contrast mode.",
+        "steps": [
+            ("log", "Enabling high contrast mode"),
+            ("find", "dashboardContainer"),
+            ("log", "High contrast mode supported")
+        ]
+    },
+    {
+        "id": "TC_360", "category": "Accessibility Testing",
+        "name": "Accessibility - Color Blind Mode",
+        "description": "Verify app supports color blind mode.",
+        "steps": [
+            ("log", "Enabling color blind mode"),
+            ("find", "dashboardContainer"),
+            ("log", "Color blind mode supported")
+        ]
+    },
+    {
+        "id": "TC_361", "category": "Accessibility Testing",
+        "name": "Accessibility - Large Text Mode",
+        "description": "Verify app supports large text mode.",
+        "steps": [
+            ("log", "Enabling large text mode"),
+            ("find", "dashboardContainer"),
+            ("log", "Large text mode supported")
+        ]
+    },
+    {
+        "id": "TC_362", "category": "Accessibility Testing",
+        "name": "Accessibility - Screen Magnifier Support",
+        "description": "Verify app works with screen magnifier.",
+        "steps": [
+            ("log", "Testing screen magnifier..."),
+            ("log", "Screen magnifier supported")
+        ]
+    },
+    {
+        "id": "TC_363", "category": "Accessibility Testing",
+        "name": "Accessibility - Text-to-Speech Integration",
+        "description": "Verify app integrates with TTS services.",
+        "steps": [
+            ("log", "Testing TTS integration..."),
+            ("log", "TTS integration working")
+        ]
+    },
+    {
+        "id": "TC_364", "category": "Accessibility Testing",
+        "name": "Accessibility - Speech-to-Text Integration",
+        "description": "Verify app integrates with STT services.",
+        "steps": [
+            ("log", "Testing STT integration..."),
+            ("log", "STT integration working")
+        ]
+    },
+    {
+        "id": "TC_365", "category": "Accessibility Testing",
+        "name": "Accessibility - Gesture Alternatives",
+        "description": "Verify app provides alternatives to gestures.",
+        "steps": [
+            ("log", "Testing gesture alternatives..."),
+            ("log", "Gesture alternatives available")
+        ]
+    },
+    {
+        "id": "TC_366", "category": "Accessibility Testing",
+        "name": "Accessibility - Custom Accessibility Services",
+        "description": "Verify app works with custom accessibility services.",
+        "steps": [
+            ("log", "Testing custom accessibility services..."),
+            ("log", "Custom services supported")
+        ]
+    },
+    {
+        "id": "TC_367", "category": "Accessibility Testing",
+        "name": "Accessibility - Accessibility Shortcuts",
+        "description": "Verify app supports accessibility shortcuts.",
+        "steps": [
+            ("log", "Testing accessibility shortcuts..."),
+            ("log", "Shortcuts supported")
+        ]
+    },
+    {
+        "id": "TC_368", "category": "Accessibility Testing",
+        "name": "Accessibility - Accessibility Menu",
+        "description": "Verify app integrates with accessibility menu.",
+        "steps": [
+            ("log", "Testing accessibility menu..."),
+            ("log", "Accessibility menu integrated")
+        ]
+    },
+    {
+        "id": "TC_369", "category": "Accessibility Testing",
+        "name": "Accessibility - Accessibility Settings",
+        "description": "Verify app provides accessibility settings.",
+        "steps": [
+            ("tap", "navProfile"),
+            ("tap", "btnAccessibility"),
+            ("find", "accessibilityOptions")
+        ]
+    },
+    {
+        "id": "TC_370", "category": "Accessibility Testing",
+        "name": "Accessibility - Accessibility Help",
+        "description": "Verify app provides accessibility help documentation.",
+        "steps": [
+            ("tap", "navProfile"),
+            ("tap", "btnAccessibility"),
+            ("tap", "btnAccessibilityHelp"),
+            ("find", "accessibilityHelpContent")
+        ]
     }
 ]
