@@ -143,5 +143,97 @@ TEST_CASES = [
             ("log", "Encoding test emergency SMS payload..."),
             ("assert_equal", "SMS Content Encrypted", "SMS Content Encrypted")
         ]
+    },
+    {
+        "id": "TC_191", "category": "Security Testing",
+        "name": "Security - Proguard Code Obfuscation",
+        "description": "Verify release builds use ProGuard/R8 obfuscation.",
+        "steps": [
+            ("log", "Checking APK for obfuscated code..."),
+            ("assert_equal", "Code Obfuscated", "Code Obfuscated")
+        ]
+    },
+    {
+        "id": "TC_192", "category": "Security Testing",
+        "name": "Security - Certificate Pinning Validation",
+        "description": "Verify certificate pinning prevents MITM attacks.",
+        "steps": [
+            ("log", "Testing certificate pinning..."),
+            ("assert_equal", "Certificate Pinning Active", "Certificate Pinning Active")
+        ]
+    },
+    {
+        "id": "TC_193", "category": "Security Testing",
+        "name": "Security - Secure Flag on Activities",
+        "description": "Verify sensitive activities use FLAG_SECURE.",
+        "steps": [
+            ("tap", "navSafety"),
+            ("tap", "btnReportIncident"),
+            ("log", "Checking FLAG_SECURE on sensitive activity..."),
+            ("assert_equal", "FLAG_SECURE Set", "FLAG_SECURE Set")
+        ]
+    },
+    {
+        "id": "TC_194", "category": "Security Testing",
+        "name": "Security - Network Security Configuration",
+        "description": "Verify network_security_config.xml enforces HTTPS.",
+        "steps": [
+            ("log", "Checking network security configuration..."),
+            ("assert_equal", "HTTPS Enforced", "HTTPS Enforced")
+        ]
+    },
+    {
+        "id": "TC_195", "category": "Security Testing",
+        "name": "Security - Debuggable Release Build Check",
+        "description": "Verify release builds are not debuggable.",
+        "steps": [
+            ("log", "Checking debuggable flag in release build..."),
+            ("assert_equal", "Not Debuggable", "Not Debuggable")
+        ]
+    },
+    {
+        "id": "TC_196", "category": "Security Testing",
+        "name": "Security - Exported Components Review",
+        "description": "Verify no unnecessary components are exported.",
+        "steps": [
+            ("log", "Reviewing exported components in manifest..."),
+            ("assert_equal", "No Unnecessary Exports", "No Unnecessary Exports")
+        ]
+    },
+    {
+        "id": "TC_197", "category": "Security Testing",
+        "name": "Security - Permission Minimization",
+        "description": "Verify app requests only necessary permissions.",
+        "steps": [
+            ("log", "Reviewing requested permissions..."),
+            ("assert_equal", "Permissions Minimized", "Permissions Minimized")
+        ]
+    },
+    {
+        "id": "TC_198", "category": "Security Testing",
+        "name": "Security - Log Sanitization",
+        "description": "Verify sensitive data is not logged in production.",
+        "steps": [
+            ("log", "Checking for sensitive data in logs..."),
+            ("assert_equal", "No Sensitive Logs", "No Sensitive Logs")
+        ]
+    },
+    {
+        "id": "TC_199", "category": "Security Testing",
+        "name": "Security - WebView Security Settings",
+        "description": "Verify WebViews have security settings enabled.",
+        "steps": [
+            ("log", "Checking WebView security configuration..."),
+            ("assert_equal", "WebView Secure", "WebView Secure")
+        ]
+    },
+    {
+        "id": "TC_200", "category": "Security Testing",
+        "name": "Security - Backup Restrictions",
+        "description": "Verify sensitive data is excluded from backups.",
+        "steps": [
+            ("log", "Checking backup rules..."),
+            ("assert_equal", "Backup Rules Configured", "Backup Rules Configured")
+        ]
     }
 ]

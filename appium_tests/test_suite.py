@@ -17,11 +17,11 @@ from categories.e2e.test_e2e import TEST_CASES as e2e_cases
 class SmartSafetyTravelTestSuite(TestBase):
     """
     Appium test suite representing the E2E user paths of the SmartSafetyTravel Android app.
-    Combines exactly 150 test cases dynamically loaded from category subfolders.
+    Combines exactly 250 test cases dynamically loaded from category subfolders.
     Supports both real Appium driver execution and simulation fallback mode.
     """
 
-    # Dynamically aggregate all 150 test cases from the category folders
+    # Dynamically aggregate all 250 test cases from the category folders
     TEST_CASES = (
         functional_cases +
         ui_ux_cases +

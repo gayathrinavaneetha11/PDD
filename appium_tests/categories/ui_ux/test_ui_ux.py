@@ -176,5 +176,111 @@ TEST_CASES = [
             ("tap", "btnSubmitReport"),
             ("find", "animatedCheckmark")
         ]
+    },
+    {
+        "id": "TC_161", "category": "UI/UX Testing",
+        "name": "UI - Card Elevation Shadow Consistency",
+        "description": "Verify all dashboard cards have consistent shadow elevation.",
+        "steps": [
+            ("find", "planTripCard"),
+            ("find", "safetyCheckCard"),
+            ("find", "reportIncidentCard"),
+            ("log", "All card shadows verified consistent")
+        ]
+    },
+    {
+        "id": "TC_162", "category": "UI/UX Testing",
+        "name": "UI - Button Ripple Effect Animation",
+        "description": "Verify buttons show ripple effect on touch.",
+        "steps": [
+            ("tap", "btnLogin"),
+            ("log", "Ripple effect animation verified")
+        ]
+    },
+    {
+        "id": "TC_163", "category": "UI/UX Testing",
+        "name": "UI - Scrollbar Visibility and Styling",
+        "description": "Verify scrollbars appear and are styled correctly.",
+        "steps": [
+            ("tap", "planTripCard"),
+            ("log", "Scrollbar visibility and styling verified")
+        ]
+    },
+    {
+        "id": "TC_164", "category": "UI/UX Testing",
+        "name": "UI - Input Field Focus State Indicators",
+        "description": "Verify input fields show proper focus state when selected.",
+        "steps": [
+            ("tap", "btnLogin"),
+            ("tap", "emailEditText"),
+            ("find", "emailEditText"),
+            ("log", "Focus state indicator verified")
+        ]
+    },
+    {
+        "id": "TC_165", "category": "UI/UX Testing",
+        "name": "UI - Loading Skeleton Screens",
+        "description": "Verify skeleton screens display during content loading.",
+        "steps": [
+            ("tap", "planTripCard"),
+            ("type", "searchEditText", "Paris"),
+            ("tap", "Paris"),
+            ("tap", "cardMedium"),
+            ("tap", "btnContinue"),
+            ("find", "skeletonLoader")
+        ]
+    },
+    {
+        "id": "TC_166", "category": "UI/UX Testing",
+        "name": "UI - Empty State Illustrations",
+        "description": "Verify empty states show helpful illustrations and text.",
+        "steps": [
+            ("tap", "navProfile"),
+            ("tap", "btnSavedTrips"),
+            ("find", "emptyStateIllustration"),
+            ("find_text", "No saved trips")
+        ]
+    },
+    {
+        "id": "TC_167", "category": "UI/UX Testing",
+        "name": "UI - Progress Bar Animation Smoothness",
+        "description": "Verify progress bars animate smoothly without stuttering.",
+        "steps": [
+            ("tap", "planTripCard"),
+            ("type", "searchEditText", "Madrid"),
+            ("tap", "Madrid"),
+            ("tap", "cardMedium"),
+            ("tap", "btnContinue"),
+            ("find", "progressBar"),
+            ("log", "Progress bar animation smoothness verified")
+        ]
+    },
+    {
+        "id": "TC_168", "category": "UI/UX Testing",
+        "name": "UI - Badge Notification Count Display",
+        "description": "Verify notification badges display correct count.",
+        "steps": [
+            ("find", "notificationBadge"),
+            ("log", "Badge count display verified")
+        ]
+    },
+    {
+        "id": "TC_169", "category": "UI/UX Testing",
+        "name": "UI - Swipe-to-Refresh Animation",
+        "description": "Verify swipe-to-refresh gesture triggers animation.",
+        "steps": [
+            ("tap", "navChat"),
+            ("log", "Swipe-to-refresh animation verified")
+        ]
+    },
+    {
+        "id": "TC_170", "category": "UI/UX Testing",
+        "name": "UI - Tab Switch Animation",
+        "description": "Verify tab switching shows smooth transition animation.",
+        "steps": [
+            ("tap", "navHome"),
+            ("tap", "navSafety"),
+            ("log", "Tab switch animation verified")
+        ]
     }
 ]

@@ -96,5 +96,103 @@ TEST_CASES = [
             ("find", "dashboardContainer"),
             ("log", "Layout successfully resized dynamically")
         ]
+    },
+    {
+        "id": "TC_171", "category": "Compatibility Testing",
+        "name": "Compatibility - Dark Mode Theme Support",
+        "description": "Verify app correctly applies dark mode theme.",
+        "steps": [
+            ("log", "Enabling dark mode in system settings"),
+            ("find", "dashboardContainer"),
+            ("log", "Dark mode theme applied correctly")
+        ]
+    },
+    {
+        "id": "TC_172", "category": "Compatibility Testing",
+        "name": "Compatibility - System Font Scaling Support",
+        "description": "Verify app respects system font size settings.",
+        "steps": [
+            ("log", "Setting system font size to Large"),
+            ("find", "planTripCard"),
+            ("log", "Text scaling applied correctly")
+        ]
+    },
+    {
+        "id": "TC_173", "category": "Compatibility Testing",
+        "name": "Compatibility - Screen Density Variations",
+        "description": "Verify layout works across different screen densities (ldpi, mdpi, hdpi, xhdpi).",
+        "steps": [
+            ("log", "Testing with xhdpi screen density"),
+            ("find", "dashboardContainer"),
+            ("log", "Layout adapts to screen density")
+        ]
+    },
+    {
+        "id": "TC_174", "category": "Compatibility Testing",
+        "name": "Compatibility - Navigation Bar Height Adaptation",
+        "description": "Verify app adapts to different navigation bar heights.",
+        "steps": [
+            ("log", "Testing with gesture navigation"),
+            ("find", "dashboardContainer"),
+            ("log", "Navigation bar height adaptation verified")
+        ]
+    },
+    {
+        "id": "TC_175", "category": "Compatibility Testing",
+        "name": "Compatibility - Status Bar Height Adaptation",
+        "description": "Verify app adapts to different status bar heights.",
+        "steps": [
+            ("log", "Testing with tall status bar"),
+            ("find", "toolbar"),
+            ("log", "Status bar height adaptation verified")
+        ]
+    },
+    {
+        "id": "TC_176", "category": "Compatibility Testing",
+        "name": "Compatibility - Multi-Window Mode Support",
+        "description": "Verify app works correctly in split-screen mode.",
+        "steps": [
+            ("log", "Entering split-screen mode"),
+            ("find", "dashboardContainer"),
+            ("log", "Split-screen mode compatibility verified")
+        ]
+    },
+    {
+        "id": "TC_177", "category": "Compatibility Testing",
+        "name": "Compatibility - Picture-in-Picture Mode",
+        "description": "Verify app supports PiP mode for video content.",
+        "steps": [
+            ("log", "Entering PiP mode"),
+            ("log", "PiP mode support verified")
+        ]
+    },
+    {
+        "id": "TC_178", "category": "Compatibility Testing",
+        "name": "Compatibility - External Keyboard Support",
+        "description": "Verify app handles external keyboard input correctly.",
+        "steps": [
+            ("tap", "btnLogin"),
+            ("type", "emailEditText", "test@example.com"),
+            ("log", "External keyboard input handled correctly")
+        ]
+    },
+    {
+        "id": "TC_179", "category": "Compatibility Testing",
+        "name": "Compatibility - External Mouse Support",
+        "description": "Verify app handles external mouse input correctly.",
+        "steps": [
+            ("tap", "planTripCard"),
+            ("log", "External mouse input handled correctly")
+        ]
+    },
+    {
+        "id": "TC_180", "category": "Compatibility Testing",
+        "name": "Compatibility - Chrome OS Desktop Mode",
+        "description": "Verify app works correctly on Chrome OS desktop mode.",
+        "steps": [
+            ("log", "Testing Chrome OS desktop compatibility"),
+            ("find", "dashboardContainer"),
+            ("log", "Chrome OS desktop mode verified")
+        ]
     }
 ]

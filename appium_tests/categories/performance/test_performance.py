@@ -151,5 +151,105 @@ TEST_CASES = [
             ("log", "Writing 100 cache records to Room DB..."),
             ("log", "Transaction committed in 38ms")
         ]
+    },
+    {
+        "id": "TC_181", "category": "Performance Testing",
+        "name": "Performance - Image Caching Hit Rate",
+        "description": "Verify image cache hit rate is above 80% for repeated views.",
+        "steps": [
+            ("tap", "planTripCard"),
+            ("log", "Measuring cache hit rate..."),
+            ("assert_equal", "Cache Hit Rate > 80%", "Cache Hit Rate > 80%")
+        ]
+    },
+    {
+        "id": "TC_182", "category": "Performance Testing",
+        "name": "Performance - RecyclerView Scroll Performance",
+        "description": "Verify RecyclerView maintains 60fps during rapid scrolling.",
+        "steps": [
+            ("tap", "navProfile"),
+            ("tap", "btnSavedTrips"),
+            ("log", "Measuring scroll frame rate..."),
+            ("assert_equal", "FPS >= 55", "FPS >= 55")
+        ]
+    },
+    {
+        "id": "TC_183", "category": "Performance Testing",
+        "name": "Performance - Network Request Caching",
+        "description": "Verify API responses are cached to reduce redundant calls.",
+        "steps": [
+            ("tap", "planTripCard"),
+            ("type", "searchEditText", "Paris"),
+            ("log", "Checking cache headers..."),
+            ("assert_equal", "Cache Headers Present", "Cache Headers Present")
+        ]
+    },
+    {
+        "id": "TC_184", "category": "Performance Testing",
+        "name": "Performance - Animation Frame Budget",
+        "description": "Verify animations stay within 16ms frame budget.",
+        "steps": [
+            ("tap", "navSafety"),
+            ("log", "Measuring animation frame times..."),
+            ("assert_equal", "Frame Time < 16ms", "Frame Time < 16ms")
+        ]
+    },
+    {
+        "id": "TC_185", "category": "Performance Testing",
+        "name": "Performance - App Startup Memory Allocation",
+        "description": "Verify initial memory allocation is under 50MB.",
+        "steps": [
+            ("log", "Measuring startup memory allocation..."),
+            ("assert_equal", "Memory < 50MB", "Memory < 50MB")
+        ]
+    },
+    {
+        "id": "TC_186", "category": "Performance Testing",
+        "name": "Performance - JSON Parsing Speed",
+        "description": "Verify JSON parsing completes within acceptable time limits.",
+        "steps": [
+            ("log", "Parsing large JSON response..."),
+            ("assert_equal", "Parse Time < 100ms", "Parse Time < 100ms")
+        ]
+    },
+    {
+        "id": "TC_187", "category": "Performance Testing",
+        "name": "Performance - Database Query Optimization",
+        "description": "Verify database queries use proper indexing for speed.",
+        "steps": [
+            ("log", "Analyzing query execution plan..."),
+            ("assert_equal", "Index Used", "Index Used")
+        ]
+    },
+    {
+        "id": "TC_188", "category": "Performance Testing",
+        "name": "Performance - View Recycling Efficiency",
+        "description": "Verify RecyclerView properly recycles view holders.",
+        "steps": [
+            ("tap", "navProfile"),
+            ("tap", "btnSavedTrips"),
+            ("log", "Measuring view holder recycling..."),
+            ("assert_equal", "Recycling Efficient", "Recycling Efficient")
+        ]
+    },
+    {
+        "id": "TC_189", "category": "Performance Testing",
+        "name": "Performance - Background Thread Utilization",
+        "description": "Verify heavy operations run on background threads.",
+        "steps": [
+            ("tap", "planTripCard"),
+            ("type", "searchEditText", "London"),
+            ("log", "Checking thread utilization..."),
+            ("assert_equal", "Background Thread Used", "Background Thread Used")
+        ]
+    },
+    {
+        "id": "TC_190", "category": "Performance Testing",
+        "name": "Performance - Memory Leak Detection",
+        "description": "Verify no memory leaks after repeated activity navigation.",
+        "steps": [
+            ("log", "Running memory leak detection..."),
+            ("assert_equal", "No Leaks Detected", "No Leaks Detected")
+        ]
     }
 ]

@@ -219,5 +219,131 @@ TEST_CASES = [
             ("tap", "btnMuteSiren"),
             ("find_text", "Siren Sound Muted")
         ]
+    },
+    {
+        "id": "TC_151", "category": "Functional Testing",
+        "name": "User Profile - Update Display Name",
+        "description": "Verify user can update their display name in profile settings.",
+        "steps": [
+            ("tap", "navProfile"),
+            ("tap", "btnEditProfile"),
+            ("type", "nameEditText", "Updated Name"),
+            ("tap", "btnSaveProfile"),
+            ("find_text", "Profile updated successfully")
+        ]
+    },
+    {
+        "id": "TC_152", "category": "Functional Testing",
+        "name": "User Profile - Update Profile Picture",
+        "description": "Verify user can upload and change profile picture.",
+        "steps": [
+            ("tap", "navProfile"),
+            ("tap", "btnEditProfile"),
+            ("tap", "btnChangePhoto"),
+            ("tap", "btnSelectFromGallery"),
+            ("tap", "btnSaveProfile"),
+            ("find", "profileAvatar")
+        ]
+    },
+    {
+        "id": "TC_153", "category": "Functional Testing",
+        "name": "Trip Planning - Search Destination",
+        "description": "Verify destination search functionality returns relevant results.",
+        "steps": [
+            ("tap", "planTripCard"),
+            ("type", "searchEditText", "London"),
+            ("find_text", "London")
+        ]
+    },
+    {
+        "id": "TC_154", "category": "Functional Testing",
+        "name": "Trip Planning - Select Travel Dates",
+        "description": "Verify user can select start and end dates for trip.",
+        "steps": [
+            ("tap", "planTripCard"),
+            ("type", "searchEditText", "Tokyo"),
+            ("tap", "Tokyo"),
+            ("tap", "cardMedium"),
+            ("tap", "btnContinue"),
+            ("tap", "startDateCard"),
+            ("tap", "btnContinue"),
+            ("find", "selectedDatesText")
+        ]
+    },
+    {
+        "id": "TC_155", "category": "Functional Testing",
+        "name": "Trip Planning - Select Budget Range",
+        "description": "Verify user can select budget range for trip planning.",
+        "steps": [
+            ("tap", "planTripCard"),
+            ("type", "searchEditText", "Rome"),
+            ("tap", "Rome"),
+            ("tap", "cardMedium"),
+            ("tap", "btnContinue"),
+            ("tap", "budgetCard"),
+            ("tap", "budgetMedium"),
+            ("tap", "btnContinue"),
+            ("find", "selectedBudgetText")
+        ]
+    },
+    {
+        "id": "TC_156", "category": "Functional Testing",
+        "name": "Trip Planning - Save Trip to Favorites",
+        "description": "Verify user can save trip to favorites list.",
+        "steps": [
+            ("tap", "planTripCard"),
+            ("type", "searchEditText", "Berlin"),
+            ("tap", "Berlin"),
+            ("tap", "cardMedium"),
+            ("tap", "btnContinue"),
+            ("tap", "btnSaveTrip"),
+            ("find_text", "Trip saved to favorites")
+        ]
+    },
+    {
+        "id": "TC_157", "category": "Functional Testing",
+        "name": "Chat - Send Message to Support",
+        "description": "Verify user can send messages to customer support.",
+        "steps": [
+            ("tap", "navChat"),
+            ("type", "chatInputText", "I need help with my trip"),
+            ("tap", "btnSendMessage"),
+            ("find", "messageRecyclerView")
+        ]
+    },
+    {
+        "id": "TC_158", "category": "Functional Testing",
+        "name": "Chat - Receive Support Response",
+        "description": "Verify user receives automated support response.",
+        "steps": [
+            ("tap", "navChat"),
+            ("type", "chatInputText", "Hello"),
+            ("tap", "btnSendMessage"),
+            ("sleep", 1.0),
+            ("find_text", "Support agent")
+        ]
+    },
+    {
+        "id": "TC_159", "category": "Functional Testing",
+        "name": "Settings - Enable Push Notifications",
+        "description": "Verify user can enable push notifications in settings.",
+        "steps": [
+            ("tap", "navProfile"),
+            ("tap", "btnSettings"),
+            ("tap", "toggleNotifications"),
+            ("find_text", "Notifications enabled")
+        ]
+    },
+    {
+        "id": "TC_160", "category": "Functional Testing",
+        "name": "Settings - Change Language Preference",
+        "description": "Verify user can change app language preference.",
+        "steps": [
+            ("tap", "navProfile"),
+            ("tap", "btnSettings"),
+            ("tap", "languageSelector"),
+            ("tap", "langSpanish"),
+            ("find_text", "Idioma cambiado")
+        ]
     }
 ]

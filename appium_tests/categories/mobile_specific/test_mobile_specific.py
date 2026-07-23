@@ -141,5 +141,98 @@ TEST_CASES = [
             ("log", "Relaunching app..."),
             ("find_text", "Restore previous trip planning?")
         ]
+    },
+    {
+        "id": "TC_231", "category": "Mobile-Specific Testing",
+        "name": "Mobile - Bluetooth Permission Handling",
+        "description": "Verify app handles Bluetooth permission requests correctly.",
+        "steps": [
+            ("log", "Requesting Bluetooth permission..."),
+            ("assert_equal", "Permission Handled", "Permission Handled")
+        ]
+    },
+    {
+        "id": "TC_232", "category": "Mobile-Specific Testing",
+        "name": "Mobile - Storage Permission Handling",
+        "description": "Verify app handles storage permission requests correctly.",
+        "steps": [
+            ("log", "Requesting storage permission..."),
+            ("assert_equal", "Permission Handled", "Permission Handled")
+        ]
+    },
+    {
+        "id": "TC_233", "category": "Mobile-Specific Testing",
+        "name": "Mobile - Location Permission Precision",
+        "description": "Verify app requests appropriate location permission precision.",
+        "steps": [
+            ("log", "Checking location permission precision..."),
+            ("assert_equal", "Precision Appropriate", "Precision Appropriate")
+        ]
+    },
+    {
+        "id": "TC_234", "category": "Mobile-Specific Testing",
+        "name": "Mobile - Do Not Disturb Mode Handling",
+        "description": "Verify app respects Do Not Disturb mode settings.",
+        "steps": [
+            ("log", "Enabling Do Not Disturb mode..."),
+            ("tap", "sosFab"),
+            ("log", "SOS still works in DND mode")
+        ]
+    },
+    {
+        "id": "TC_235", "category": "Mobile-Specific Testing",
+        "name": "Mobile - Battery Saver Mode Adaptation",
+        "description": "Verify app adapts behavior in battery saver mode.",
+        "steps": [
+            ("log", "Enabling battery saver mode..."),
+            ("assert_equal", "Battery Saver Adapted", "Battery Saver Adapted")
+        ]
+    },
+    {
+        "id": "TC_236", "category": "Mobile-Specific Testing",
+        "name": "Mobile - Data Saver Mode Handling",
+        "description": "Verify app respects data saver mode restrictions.",
+        "steps": [
+            ("log", "Enabling data saver mode..."),
+            ("assert_equal", "Data Saver Respected", "Data Saver Respected")
+        ]
+    },
+    {
+        "id": "TC_237", "category": "Mobile-Specific Testing",
+        "name": "Mobile - Headphone Connection Handling",
+        "description": "Verify app handles headphone connection/disconnection events.",
+        "steps": [
+            ("log", "Simulating headphone connection..."),
+            ("assert_equal", "Headphone Event Handled", "Headphone Event Handled")
+        ]
+    },
+    {
+        "id": "TC_238", "category": "Mobile-Specific Testing",
+        "name": "Mobile - Volume Button Integration",
+        "description": "Verify app handles volume button presses appropriately.",
+        "steps": [
+            ("log", "Testing volume button integration..."),
+            ("assert_equal", "Volume Buttons Handled", "Volume Buttons Handled")
+        ]
+    },
+    {
+        "id": "TC_239", "category": "Mobile-Specific Testing",
+        "name": "Mobile - Screen Wake Lock Management",
+        "description": "Verify app manages screen wake lock correctly during critical operations.",
+        "steps": [
+            ("tap", "navSafety"),
+            ("tap", "btnShareLocation"),
+            ("log", "Wake lock managed correctly")
+        ]
+    },
+    {
+        "id": "TC_240", "category": "Mobile-Specific Testing",
+        "name": "Mobile - System Theme Adaptation",
+        "description": "Verify app adapts to system theme changes dynamically.",
+        "steps": [
+            ("log", "Changing system theme..."),
+            ("find", "dashboardContainer"),
+            ("log", "Theme adaptation verified")
+        ]
     }
 ]

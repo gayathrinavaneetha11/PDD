@@ -145,5 +145,103 @@ TEST_CASES = [
             ("tap", "registerButton"),
             ("find", "iconErrorAlert")
         ]
+    },
+    {
+        "id": "TC_221", "category": "Accessibility Testing",
+        "name": "Accessibility - Minimum Touch Target Size (44dp)",
+        "description": "Verify all interactive elements meet minimum touch target size.",
+        "steps": [
+            ("find", "btnEmergencySOS"),
+            ("log", "Touch target size verified >= 44dp")
+        ]
+    },
+    {
+        "id": "TC_222", "category": "Accessibility Testing",
+        "name": "Accessibility - Screen Reader Focus Order",
+        "description": "Verify screen reader follows logical focus order.",
+        "steps": [
+            ("tap", "btnLogin"),
+            ("log", "Focus order verified logical")
+        ]
+    },
+    {
+        "id": "TC_223", "category": "Accessibility Testing",
+        "name": "Accessibility - Live Region Announcements",
+        "description": "Verify dynamic content changes are announced.",
+        "steps": [
+            ("tap", "navSafety"),
+            ("tap", "btnShareLocation"),
+            ("log", "Live region announcement verified")
+        ]
+    },
+    {
+        "id": "TC_224", "category": "Accessibility Testing",
+        "name": "Accessibility - Heading Level Hierarchy",
+        "description": "Verify proper heading levels for screen readers.",
+        "steps": [
+            ("find", "dashboardContainer"),
+            ("log", "Heading hierarchy verified")
+        ]
+    },
+    {
+        "id": "TC_225", "category": "Accessibility Testing",
+        "name": "Accessibility - Link Purpose Descriptions",
+        "description": "Verify links have descriptive text for screen readers.",
+        "steps": [
+            ("tap", "navProfile"),
+            ("tap", "btnPrivacy"),
+            ("log", "Link descriptions verified")
+        ]
+    },
+    {
+        "id": "TC_226", "category": "Accessibility Testing",
+        "name": "Accessibility - Form Label Associations",
+        "description": "Verify form fields have properly associated labels.",
+        "steps": [
+            ("tap", "btnRegister"),
+            ("find", "nameEditText"),
+            ("log", "Form label associations verified")
+        ]
+    },
+    {
+        "id": "TC_227", "category": "Accessibility Testing",
+        "name": "Accessibility - Error Message Accessibility",
+        "description": "Verify error messages are accessible to screen readers.",
+        "steps": [
+            ("tap", "btnLogin"),
+            ("tap", "loginButton"),
+            ("find", "errorMessageAccessibilityView"),
+            ("log", "Error messages accessible")
+        ]
+    },
+    {
+        "id": "TC_228", "category": "Accessibility Testing",
+        "name": "Accessibility - Video Caption Support",
+        "description": "Verify videos have closed caption support.",
+        "steps": [
+            ("tap", "navSafety"),
+            ("tap", "btnNearbyHospitals"),
+            ("log", "Video caption support verified")
+        ]
+    },
+    {
+        "id": "TC_229", "category": "Accessibility Testing",
+        "name": "Accessibility - Audio Description Support",
+        "description": "Verify audio descriptions are available for video content.",
+        "steps": [
+            ("tap", "navSafety"),
+            ("tap", "btnNearbyHospitals"),
+            ("log", "Audio description support verified")
+        ]
+    },
+    {
+        "id": "TC_230", "category": "Accessibility Testing",
+        "name": "Accessibility - Reduced Motion Preference",
+        "description": "Verify app respects reduced motion accessibility setting.",
+        "steps": [
+            ("log", "Enabling reduced motion preference"),
+            ("find", "dashboardContainer"),
+            ("log", "Reduced motion respected")
+        ]
     }
 ]

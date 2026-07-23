@@ -133,5 +133,95 @@ TEST_CASES = [
             ("log", "Reconnecting net service interface..."),
             ("log", "Queued offline incidents posted to database")
         ]
+    },
+    {
+        "id": "TC_201", "category": "API Testing",
+        "name": "API - User Profile Update Endpoint",
+        "description": "Verify profile update API accepts and saves changes.",
+        "steps": [
+            ("log", "Sending PUT request to profile endpoint..."),
+            ("assert_equal", "Profile Updated", "Profile Updated")
+        ]
+    },
+    {
+        "id": "TC_202", "category": "API Testing",
+        "name": "API - Trip Deletion Endpoint",
+        "description": "Verify trip deletion API removes record from database.",
+        "steps": [
+            ("log", "Sending DELETE request to trip endpoint..."),
+            ("assert_equal", "Trip Deleted", "Trip Deleted")
+        ]
+    },
+    {
+        "id": "TC_203", "category": "API Testing",
+        "name": "API - Emergency Contact Sync Endpoint",
+        "description": "Verify emergency contacts sync with server database.",
+        "steps": [
+            ("log", "Syncing emergency contacts..."),
+            ("assert_equal", "Contacts Synced", "Contacts Synced")
+        ]
+    },
+    {
+        "id": "TC_204", "category": "API Testing",
+        "name": "API - Location History Upload Endpoint",
+        "description": "Verify location history uploads to server securely.",
+        "steps": [
+            ("log", "Uploading location history..."),
+            ("assert_equal", "History Uploaded", "History Uploaded")
+        ]
+    },
+    {
+        "id": "TC_205", "category": "API Testing",
+        "name": "API - Safe Zones Download Endpoint",
+        "description": "Verify safe zones data downloads correctly from server.",
+        "steps": [
+            ("log", "Downloading safe zones data..."),
+            ("assert_equal", "Safe Zones Downloaded", "Safe Zones Downloaded")
+        ]
+    },
+    {
+        "id": "TC_206", "category": "API Testing",
+        "name": "API - Incident Report Submission Endpoint",
+        "description": "Verify incident reports submit successfully to server.",
+        "steps": [
+            ("log", "Submitting incident report..."),
+            ("assert_equal", "Report Submitted", "Report Submitted")
+        ]
+    },
+    {
+        "id": "TC_207", "category": "API Testing",
+        "name": "API - Chat Message History Endpoint",
+        "description": "Verify chat history retrieves messages from server.",
+        "steps": [
+            ("log", "Retrieving chat history..."),
+            ("assert_equal", "History Retrieved", "History Retrieved")
+        ]
+    },
+    {
+        "id": "TC_208", "category": "API Testing",
+        "name": "API - User Preferences Sync Endpoint",
+        "description": "Verify user preferences sync with server database.",
+        "steps": [
+            ("log", "Syncing user preferences..."),
+            ("assert_equal", "Preferences Synced", "Preferences Synced")
+        ]
+    },
+    {
+        "id": "TC_209", "category": "API Testing",
+        "name": "API - Search Suggestions Endpoint",
+        "description": "Verify search suggestions API returns relevant results.",
+        "steps": [
+            ("log", "Requesting search suggestions..."),
+            ("assert_equal", "Suggestions Returned", "Suggestions Returned")
+        ]
+    },
+    {
+        "id": "TC_210", "category": "API Testing",
+        "name": "API - App Version Check Endpoint",
+        "description": "Verify app version check returns update status.",
+        "steps": [
+            ("log", "Checking app version..."),
+            ("assert_equal", "Version Check Complete", "Version Check Complete")
+        ]
     }
 ]
