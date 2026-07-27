@@ -9,6 +9,9 @@ on:
       - main
   workflow_dispatch:
 
+env:
+  NODE_VERSION: '22'
+
 jobs:
   verify_deployment:
     name: Verify Deployment
@@ -159,6 +162,7 @@ jobs:
         with:
           name: Appium-Logs
           path: appium.log
+        continue-on-error: true
 
   security_scan:
     name: Backend Security Scan
